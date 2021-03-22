@@ -1,0 +1,29 @@
+{
+    "name": "magelearn/module-freeshippingprogressbar",
+    "description": "Display a progress bar on the shopping cart based on order total to encourage users to spend more to get free shipping",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        },
+        {
+            "email": "vijaymrami@gmail.com",
+            "name": "vijay rami"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/module-quote": "*",
+        "magento/module-checkout": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magelearn\\FreeShippingProgressBar\\": ""
+        }
+    }
+}

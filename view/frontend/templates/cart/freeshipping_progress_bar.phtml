@@ -1,0 +1,60 @@
+<?php
+/**
+ * Copyright © Chris Mallory All rights reserved.
+ * See COPYING.txt for license details.
+ */
+declare(strict_types=1);
+
+use Magelearn\FreeShippingProgressBar\ViewModel\Cart\ProgressBar;
+use Magento\Framework\View\Element\Template;
+
+/** @var Template $block */
+/** @var ProgressBar $viewModel */
+$viewModel = $block->getData('viewModel');
+
+$shippingLabel = 'FREE SHIPPING';
+
+?>
+<div class="freeship-progress">
+    <?php if (!$viewModel->isFreeShippingEligible()): ?>
+        <?php
+        $freeshippingProgress = $viewModel->getFreeShippingCompletionPercent();
+		$freeshippingProgresscolor = $viewModel->getProgressbarBackground();
+        $background = "background: linear-gradient(to right, #".$freeshippingProgresscolor." 0%, #".$freeshippingProgresscolor." 
+            ". $freeshippingProgress . "%, lightgreen);";
+        if ($freeshippingProgress > 90) {
+            $background = "background: linear-gradient(to right, #".$freeshippingProgresscolor." 0%, #".$freeshippingProgresscolor." 95%, lightgreen);";
+        }
+        ?>
+        <p class="upsell">
+        <?= /* @noEscape */ __(
+            'Add <span class="freeship-price">%1</span> more to get <span class="freeship-bold">%2!</span>',
+            $viewModel->getFormattedPrice($viewModel->getFreeShippingDifference()),
+            $shippingLabel
+        ) ?>
+        </p>
+        <div class="freeship-progress-bar-wrapper">
+            <span class="min"><?= /* @noEscape */ $viewModel->getFormattedPrice(0, 0) ?></span>
+            <div class="freeship-progress-bar">
+                <div class="freeship-progress-bar-bg">
+                    <div class="freeship-progress-bar-fill freeship-progress-bar-progress"
+                         style="width: <?= /* @noEscape */ $viewModel->getFreeShippingCompletionPercent() ?>%;
+                         <?= /* @noEscape */ $background ?>">
+                    </div>
+                </div>
+            </div>
+            <span class="max">
+                <?= /* @noEscape */ $viewModel->getFormattedPrice($viewModel->getFreeShippingMinValue(), 0) ?>
+            </span>
+        </div>
+    <?php else: ?>
+        <div class="freeship-text">
+            <p>
+                <?= /* @noEscape */ __(
+                    'Your order is eligible for <span class="freeship-bold">%1!</span>',
+                    $shippingLabel
+                ) ?>
+            </p>
+        </div>
+    <?php endif; ?>
+</div>
