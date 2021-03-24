@@ -1,17 +1,17 @@
 # Magento 2 Free Shipping Progress Bar
 
 ## Description
-![Free Shipping Progress Bar](https://i.postimg.cc/jdcX2Fsn/Screen-Shot-2021-02-02-at-11-12-26-AM.png)
+![Free Shipping Progress Bar](https://i.postimg.cc/Bt8mhSqt/Shopping-Cart.png)
 
 This Magento 2 module adds a free shipping progress bar to your Magento site's shopping cart to promote increased order value. The styles used were intended to allow for this module to be a drop-in feature for the luma theme or other themes based on it. All of the animations are CSS based and no javascript is used to limit overhead.
 
 ### Screenshots
 
 #### Order Value Below Free Shipping Minimum
-![Order Value Below Free Shipping Minimum](https://i.postimg.cc/26ndDHc6/Screen-Shot-2021-02-02-at-11-27-08-AM.png)
+![Order Value Below Free Shipping Minimum](https://i.postimg.cc/RJnGqRPw/Shopping-Cart-1.png)
 
 #### Order Value Over Free Shipping Minimum
-![Order Value Over Free Shipping Minimum](https://i.postimg.cc/J7qJ5HS9/Screen-Shot-2021-02-02-at-11-27-38-AM.png)
+![Order Value Over Free Shipping Minimum](https://i.postimg.cc/cgzXsjcs/Shopping-Cart-2.png)
 
 ## Installation
 
