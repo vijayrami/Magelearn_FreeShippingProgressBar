@@ -11,7 +11,7 @@ This Magento 2 module adds a free shipping progress bar to your Magento site's s
 ![Order Value Below Free Shipping Minimum](https://i.postimg.cc/RJnGqRPw/Shopping-Cart-1.png)
 
 #### Order Value Over Free Shipping Minimum
-![Order Value Over Free Shipping Minimum](https://i.postimg.cc/cgzXsjcs/Shopping-Cart-2.png)
+![Order Value Over Free Shipping Minimum](https://i.postimg.cc/gjGJqjHq/free-shipping.png)
 
 ## Installation
 
