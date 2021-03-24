@@ -16,14 +16,14 @@ This Magento 2 module adds a free shipping progress bar to your Magento site's s
 ## Installation
 
 ### Using Composer (Recommended)
- - Install the module composer by running `composer require chrismallory/module-freeshipping-progress-bar`
- - Enable the module by running `php bin/magento module:enable ChrisMallory_FreeShippingProgressBar`
+ - Install the module composer by running `composer require magelearn/module-freeshippingprogressbar`
+ - Enable the module by running `php bin/magento module:enable Magelearn_FreeShippingProgressBar`
  - apply database updates by running `php bin/magento setup:upgrade`
  - Flush the cache by running `php bin/magento cache:flush`
 
 ### Manual File Transfer
-- Clone or unzip this repository to `app/code/ChrisMallory_FreeShippingProgressBar`
-- Enable the module by running `php bin/magento module:enable ChrisMallory_FreeShippingProgressBar`
+- Clone or unzip this repository to `app/code/Magelearn/FreeShippingProgressBar`
+- Enable the module by running `php bin/magento module:enable Magelearn_FreeShippingProgressBar`
 - Apply database updates by running `php bin/magento setup:upgrade`
 - Flush the cache by running `php bin/magento cache:flush`
 
@@ -49,10 +49,10 @@ When the above setting is set to no, this field is where you set the order value
 ## Compatibility
 This module has been tested and validated to work on Magento versions 2.3 to 2.4.2.
 
-This module uses a ViewModel and should be compatible with versions 2.2 and higher but has not been tested on versions lower than 2.3.
+This module uses a ViewModel and should be compatible with versions 2.2 and higher.
 
 ## Bugs & Issues
-If you find a bug or issue please create a new issue [here](https://github.com/christophermallory/magento2-freeshipping-progress-bar/issues) and include as much detail and context as possible including screenshots.
+If you find a bug or issue please create a new issue [here](https://github.com/vijayrami/Magelearn_FreeShippingProgressBar/issues) and include as much detail and context as possible including screenshots.
 
 ## License
 This module is licensed under the Open Software License V3.0 which you can refer to [here](LICENSE.txt).
